@@ -13,7 +13,7 @@
     {
       "binding": "DB",
       "database_name": "vaishnav-jan",
-      // Paste the database_id printed by: npx wrangler d1 create vaishnav-jan
+      // Paste the database_id printed by: npx wrangler d1 create vaishanv-jan
       "database_id": "a328f43e-cf1a-4c8c-abaf-5b672f0ef86e"
     }
   ],
