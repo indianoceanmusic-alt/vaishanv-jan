@@ -1,0 +1,25 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "vaishnav-jan",
+  "main": "src/worker.js",
+  "compatibility_date": "2025-09-01",
+  "observability": { "enabled": true },
+  "assets": {
+    "directory": "./public",
+    "binding": "ASSETS",
+    "run_worker_first": ["/api/*"]
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "vaishnav-jan",
+      // Paste the database_id printed by: npx wrangler d1 create vaishnav-jan
+      "database_id": "a328f43e-cf1a-4c8c-abaf-5b672f0ef86e"
+    }
+  ],
+  "vars": {
+    // "pre"  = every thread waits for a moderator before it appears (recommended for launch)
+    // "post" = threads appear instantly; moderators can hide them afterwards
+    "MODERATION": "pre"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "name": "vaishnav-jan",
+  "private": true,
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "db:init:local": "wrangler d1 execute vaishnav-jan --local --file=./schema.sql",
+    "db:init:remote": "wrangler d1 execute vaishnav-jan --remote --file=./schema.sql"
+  },
+  "devDependencies": {
+    "wrangler": "^4.0.0"
+  }
+}
