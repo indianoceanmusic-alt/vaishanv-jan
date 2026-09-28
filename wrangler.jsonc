@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/wrangler/config-schema.json",
-  "name": "vaishnav-jan",
+  "name": "vaishanv-jan",
   "main": "src/worker.js",
   "compatibility_date": "2025-09-01",
   "observability": { "enabled": true },
